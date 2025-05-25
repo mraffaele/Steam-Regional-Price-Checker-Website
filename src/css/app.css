@@ -1,0 +1,64 @@
+.app {
+  background: rgba(0, 0, 0, 0.2);
+  flex: 0 0 30%;
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  position: relative;
+  width: 30%;
+
+  @media only screen and (max-width: 800px) {
+    width: 45%;
+    flex: 0 0 45%;
+  }
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+}
+
+.app__title {
+  font-size: 1rem;
+  padding: 0 1rem;
+  text-wrap: nowrap;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.app__image {
+  background: #000;
+
+  img {
+    display: block;
+    aspect-ratio: 460/215;
+    height: auto;
+    width: 100%;
+  }
+
+  a:hover {
+    opacity: 0.5;
+  }
+}
+
+.app__regions {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 1rem;
+}
+
+.app__region {
+  padding: 0.25rem 1rem;
+  flex: 1 1 50%;
+}
+
+.app__updated {
+  background: #1b2838;
+  border-radius: 0.5rem;
+  position: absolute;
+  padding: 0.25rem;
+  /* left: 50%; */
+  /* bottom: 0; */
+  top: 0.25rem;
+  right: 0.25rem;
+  /* transform: translateX(-50%); */
+}

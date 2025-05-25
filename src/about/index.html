@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#0d0d0d" />
+    <meta name="msapplication-TileColor" content="#0d0d0d" />
+    <title>Steam All Region Price Checker</title>
+    <meta name="apple-mobile-web-app-title" content="Steam All Region Price Checker" />
+    <meta property="og:title" content="Steam All Region Price Checker" />
+    <meta property="og:locale" content="en_AU" />
+    <meta property="og:type" content="website" />
+    <meta name="robots" content="index,follow,noodp" />
+    <link rel="canonical" href="https://steamregionalprices.com/about" />
+    <meta
+      name="description"
+      content="Paste the url of any Steam game into the search box above and check the cost of a steam game in all regions simultaneously."
+    />
+    <meta property="og:url" content="https://steamregionalprices.com/about" />
+    <meta property="og:site_name" content="Steam All Region Price Checker" />
+    <meta property="og:image" content="../assets/static/og-image.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="icon" href="../assets/static/favicon.png" />
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8901954447365291"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ED4SJSJT2V"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-ED4SJSJT2V");
+    </script>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="inner">
+          <a href="/" class="logo">Steam All Region Price Checker</a>
+          <nav class="headerNav">
+            <a href="/about">About</a>
+            <a href="https://chrome.google.com/webstore/detail/mopoebekmlkmahpfjjgibkbnciooimhn"
+              ><img src="../assets/chrome.svg" height="14" width="14" alt="Chrome Logo" />Download</a
+            >
+            <a href="https://github.com/mraffaele/Steam-Regional-Price-Checker/issues">Support</a>
+          </nav>
+
+          <form class="lookup">
+            <input type="text" placeholder="Steam Game url" name="gameUrl" id="gameUrl" />
+            <button type="submit">Search</button>
+          </form>
+        </div>
+      </header>
+
+      <section class="main">
+        <div class="inner">
+          <h2>The Chrome Extension</h2>
+          <p>
+            Steam Regional Prices is a Chrome Extension that enables you to compare prices for a Steam game across most
+            regions simultaneously.
+          </p>
+          <p>
+            I created this extension for the initial purpose of personally being able to instantly click a button and
+            see the prices in other regions without having to reload the page again and again for each region. I then
+            decided I would share it with anyone who wants it.
+          </p>
+          <p>
+            Using the Chrome Extension is as easy as pie. Simply install the extension from
+            <a href="https://chrome.google.com/webstore/detail/mopoebekmlkmahpfjjgibkbnciooimhn">here</a> and it should
+            do the rest automagically. There are 3 different ways you can use it:
+          </p>
+          <ol>
+            <li>
+              <strong>Current Page (Auto):</strong> Visit any Steam game url and the prices will automatically be
+              checked. This option is pm by default and can be switched off through the extension settings in Chrome
+            </li>
+            <li>
+              <strong>Current Page:</strong> Visit any Steam game url and right click somewhere blank on the page and
+              click "Look up current page"
+            </li>
+            <li>
+              <strong>Target URL:</strong> Right click on any hyperlink directed towards a steam game (eg:
+              <a href="http://store.steampowered.com/app/28050/">Here</a>) and click "Look up prices for..." (Note: For
+              greater security this must be on either store.steampowered.com or this website)
+            </li>
+          </ol>
+          <p>&nbsp;</p>
+
+          <h2>How does it work?</h2>
+          <p>
+            Each game is indexed on user request, but to save on both my bandwidth and to make it run faster, each game
+            can only be indexed <strong>once every 12 hours</strong> (for now at least). If it is requested again within
+            the 12 hours it will pull the result from my database so as to leave Steam's server alone which in turn
+            should make it load substantially quicker. Note: The images are still loaded from the Steam servers.
+          </p>
+          <p>
+            So basically the first time its indexed (in the 12 hour window) it will take a little longer as it gets the
+            data from all regions - but from that point on anyone else who checks should get the result almost
+            instantly. So within reason, the more people use it the faster it should be.
+          </p>
+          <p>
+            The extension allows the user to select from a range of currencies for the prices to be converted to. The
+            exchange rates are all just an estimate and are updated every 12 hours.
+          </p>
+          <p>&nbsp;</p>
+
+          <h2>The Website</h2>
+          <p>
+            The website, in all honesty is an afterthought to the extension. It provides anyone the ability to paste a
+            Steam game URL into the search box to check prices for all regions in the same way as the extension does. It
+            also provides a snapshot as to the most recent and popular searches.
+          </p>
+          <p>Down the track, and if people are interested, I might add more to this website.</p>
+          <p>&nbsp;</p>
+
+          <h2>What data do I save?</h2>
+          <p>
+            I save the following <strong>and only the following</strong> information whenever a search is performed:
+          </p>
+          <ul>
+            <li>The current time</li>
+            <li>Title</li>
+            <li>Steam ID</li>
+            <li>Steam Type (App or Sub)</li>
+            <li>Image URL</li>
+            <li>AU Price</li>
+            <li>US Price</li>
+            <li>UK Price</li>
+            <li>EU Tier 1 Price</li>
+            <li>EU Tier 2 Price</li>
+            <li>Russian Price</li>
+            <li>How many searches in last 12 hours</li>
+            <li>How many searches all time</li>
+          </ul>
+          <p>&nbsp;</p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="inner">
+          <p>
+            Developed by <a href="https://mraffaele.com">Michael Raffaele</a> - All trademarks are property of their
+            respective owners
+          </p>
+        </div>
+      </footer>
+
+      <dialog class="result"></dialog>
+    </div>
+  </body>
+</html>
